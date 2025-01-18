@@ -19,12 +19,29 @@ header {
     color: black; /* Черный цвет */
     font-size: 1.5em; /* Размер шрифта */
     margin-bottom: 20px; /* Отступ снизу */
+    word-wrap: break-word; /* Перенос длинных слов */
+    overflow-wrap: break-word; /* Перенос слов, если они не помещаются */
+    hyphens: auto; /* Автоматическая расстановка переносов (если поддерживается) */
+    max-width: 100%; /* Ограничение ширины текста */
+    padding: 0 10px; /* Отступы по бокам для мобильных устройств */
 }
 
 .welcome-text {
     color: #7B1FA2; /* Фиолетовый цвет */
     font-size: 1.2em; /* Размер шрифта */
     margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .school-name {
+        font-size: 1.2em; /* Уменьшаем размер шрифта на мобильных устройствах */
+        padding: 0 5px; /* Уменьшаем отступы */
+    }
+
+    .hero-content {
+        padding: 10px; /* Уменьшаем отступы внутри блока */
+    }
 }
 nav ul {
     list-style: none;
