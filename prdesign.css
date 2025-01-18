@@ -37,13 +37,6 @@ nav ul li a:hover {
     color: #7B1FA2;
 }
 
-.hero {
-    background: url('Untitled (4).png') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 215px 20px;
-    position: relative;
-}
 
 .hero-content {
     position: relative;
