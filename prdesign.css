@@ -1,0 +1,267 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F7FA; /* Светло-голубой фон */
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+    background-color: #0288D1; /* Темно-синий цвет для шапки */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #7B1FA2; /* Фиолетовый цвет при наведении */
+    transform: translateY(-3px);
+}
+
+/* Hero блок */
+.hero {
+    background: url('Untitled\ \(4\).png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 215px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 36px;
+    transition: color 0.3s ease;
+}
+
+.hero p {
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7B1FA2; /* Фиолетовый цвет для кнопки */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #4A148C; /* Темно-фиолетовый цвет при наведении */
+    transform: translateY(-5px);
+}
+
+/* Разделы */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white; /* Белый фон для разделов */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #0288D1; /* Темно-синий цвет для заголовков разделов */
+    transition: color 0.3s ease;
+}
+
+.teacher-list, .achievement-list, .student-achievement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teacher, .achievement, .student-achievement {
+    background-color: #E0F7FA; /* Светло-голубой фон для карточек */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.teacher1, .achievement, .student-achievement {
+    background-color: #E0F7FA; /* Светло-голубой фон для карточек */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.teacher2, .achievement, .student-achievement {
+    background-color: #E0F7FA; /* Светло-голубой фон для карточек */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.teacher3, .achievement, .student-achievement {
+    background-color: #E0F7FA; /* Светло-голубой фон для карточек */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.teacher4, .achievement, .student-achievement {
+    background-color: #E0F7FA; /* Светло-голубой фон для карточек */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.teacher5, .achievement, .student-achievement {
+    background-color: #E0F7FA; /* Светло-голубой фон для карточек */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.teacher img, .achievement img, .student-achievement img {
+    width: 65%;
+    border-radius: 10px;
+}
+.teacher1 img, .achievement img, .student-achievement img {
+    width: 65%;
+    border-radius: 10px;
+}
+.teacher2 img, .achievement img, .student-achievement img {
+    width: 65%;
+    border-radius: 10px;
+}
+.teacher3 img, .achievement img, .student-achievement img {
+    width: 65%;
+    border-radius: 10px;
+}
+.teacher4 img, .achievement img, .student-achievement img {
+    width: 65%;
+    border-radius: 10px;
+}
+.teacher5 img, .achievement img, .student-achievement img {
+    width: 65%;
+    border-radius: 10px;
+}
+/* Footer */
+footer {
+    background-color: #0288D1; /* Темно-синий цвет для футера */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Акценты */
+.hero, .teachers, .achievements, .students-achievements {
+    border-top: 5px solid #7B1FA2; /* Фиолетовая полоса сверху */
+}
+
+.hero h2, .teachers h2, .achievements h2, .students-achievements h2 {
+    color: #7B1FA2; /* Фиолетовый цвет для заголовков разделов */
+}
+
+.teacher:hover, .achievement:hover, .student-achievement:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.teacher1:hover, .achievement:hover, .student-achievement:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.teacher2:hover, .achievement:hover, .student-achievement:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.teacher3:hover, .achievement:hover, .student-achievement:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.teacher4:hover, .achievement:hover, .student-achievement:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.teacher5:hover, .achievement:hover, .student-achievement:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+ }
